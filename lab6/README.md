@@ -1,0 +1,9 @@
+### Project Description
+This lab focuses on the design and implementation of various fundamental components of digital logic circuits. Key components include the design of an SR latch and flip-flop, a D flip-flop (with synchronous and asynchronous reset), and a T flip-flop. As a "practical" example, the T flip-flop module is to be used as a building block to design a 3-bit counter. The concept of a clock divider is also explored in this lab through the creation of a module that provides a specified clock frequency (25MHz). Testbenches and simulation waveforms are essential to fully understanding how these designs function, if they function, and what they could be used for. Last but not least, this lab also calls for the design of a debouncer through the use of a push button as the input pulse and an LED as output. This design does not need a testbench but will need to programmed onto an FPGA board to observe its functionality.
+
+### Implementation Instructions
+1. After the source code and testbench files are written, run the synthesis of your code to make sure there are no errors.
+2. Then, locate the dropdown on the left where you can run a behavioral simulation and observe the waveform diagrams. Make sure you are familiar with how each of these designs are supposed to work in theory since the validity of the waveform might not be immediately noticeable.
+3. If everything looks good, then everything but the debouncer is complete since the deboucer is the only module to be programmed physically. For the debouncer implementation, assign one of the buttons to be your input pulse and one of the LEDs to be your output. Don't forget to include the system clock.
+4. Generate the bitsream, open the hardware manager, and load the bitstream file into your FPGA board.
+5. When the implementation is loaded, mess around with the programmed button to see how the debouncer functions.
